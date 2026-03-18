@@ -87,26 +87,15 @@
 
   .nav-links a:hover { color: var(--text); }
 
-  .nav-badge {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--green);
-    background: rgba(62,207,142,0.1);
-    padding: 0.3rem 0.8rem;
-    border-radius: 100px;
-    border: 1px solid rgba(62,207,142,0.25);
-  }
+.nav-badge {
+  color: var(--red);
+  background: rgba(248,113,113,0.1);
+  border: 1px solid rgba(248,113,113,0.25);
+}
 
-  .nav-badge::before {
-    content: '';
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--green);
-    animation: pulse 2s infinite;
-  }
+.nav-badge::before {
+  background: var(--red);
+}
 
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
@@ -743,7 +732,7 @@
     <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-badge">Available for opportunities</div>
+  <div class="nav-badge">Currently Employed</div>
 </nav>
 
 <!-- HERO -->
